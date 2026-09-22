@@ -5,7 +5,7 @@ resource "azurerm_bastion_host" "bas" {
   resource_group_name = each.value.resource_group_name
 
   dynamic "ip_configuration" {
-    for_each             = each.value.ip_configuration
+    for_each             = each.value.ip_configurations
     content {
     name                 = ip_configuration.value.name
     subnet_id            = data.azurerm_subnet.subnet_ids[each.key].id
