@@ -2,6 +2,6 @@
 
 output "pip_id" {
     value = {
-        for key, subnet in azurerm_public_ip : key => pip.id
+        for key, pip in azurerm_public_ip : key => pip.id
     }
 }
