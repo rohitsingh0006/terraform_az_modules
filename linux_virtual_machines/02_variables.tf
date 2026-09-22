@@ -14,8 +14,8 @@ variable "vms" {
     size                = string
     # costom_data script_name
 #    script_name         = string
-    # admin_username      = string                # value taken from key vault secret
-    # admin_password      = optional(string)      # value taken from key vault secret
+    admin_username      = string                
+    admin_password      = optional(string)     
     # network_interface_ids           = list(string)  # if we using data block for this then not required here
     disable_password_authentication = optional(bool)
     computer_name                   = optional(string)
