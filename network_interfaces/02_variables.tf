@@ -4,9 +4,9 @@ variable "nics" {
   description = "Map of Network Interface configurations"
   type        = map(object({
     # data block variable
-    vnet_name         = string
-    subnet_name       = string
-    pip_name          = string
+#    vnet_name         = string
+#    subnet_name       = string
+#    pip_name          = string
     # resource block variable
     name                = string
     resource_group_name = string
