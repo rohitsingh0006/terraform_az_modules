@@ -4,8 +4,8 @@ variable "nics" {
   description = "Map of Network Interface configurations"
   type        = map(object({
     # data block variable
-#    vnet_name         = string
-#    subnet_name       = string
+    vnet_name         = string
+    subnet_name       = string
 #    pip_name          = string
     # resource block variable
     name                = string
@@ -20,8 +20,8 @@ variable "nics" {
       # subnet_id                     = string # if we using data block for this then not required here
       private_ip_address_allocation = string
       private_ip_address_version    = optional(string)
-      public_ip_address_id          = optional(string)
-      primary                       = optional(bool)
+#      public_ip_address_id          = optional(string)
+#      primary                       = optional(bool)
     })), [])
   }))
 }
