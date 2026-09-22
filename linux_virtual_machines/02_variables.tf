@@ -5,8 +5,8 @@ variable "vms" {
     # data block variable
     nic_name                = string
 #    kv_name                 = string
-    vm_username_secret_name = string
-    vm_password_secret_name = string
+#    vm_username_secret_name = string
+#    vm_password_secret_name = string
     # resource block variable
     name                = string
     resource_group_name = string
