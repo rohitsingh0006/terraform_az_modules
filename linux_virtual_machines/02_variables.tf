@@ -46,5 +46,5 @@ variable "vms" {
       sku       = string
       version   = string
     })
-
+  }))
 }
