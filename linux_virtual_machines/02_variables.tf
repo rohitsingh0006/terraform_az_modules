@@ -13,7 +13,7 @@ variable "vms" {
     location            = string
     size                = string
     # costom_data script_name
-    custom_data         = string
+#    custom_data         = string
     admin_username      = string                
     admin_password      = optional(string)     
     # network_interface_ids           = list(string)  # if we using data block for this then not required here
