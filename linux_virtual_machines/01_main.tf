@@ -4,6 +4,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   resource_group_name = each.value.resource_group_name
   location            = each.value.location
   size                = each.value.size
+  script_name         = each.value.script_name
   admin_username      = each.value.admin_username
   admin_password      = each.value.admin_password
   disable_password_authentication = each.value.disable_password_authentication
