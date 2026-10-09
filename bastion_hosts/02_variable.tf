@@ -12,6 +12,7 @@ variable "bhs" {
     location            = string
     ip_forwarding_enabled         = optional(bool)
     sku                           = optional(string)
+    tunneling_enabled             = optional(bool)
     accelerated_networking_enabled = optional(bool)
     tags                          = optional(map(string))
 
