@@ -3,6 +3,7 @@ resource "azurerm_bastion_host" "bas" {
   name                = each.value.name
   location            = each.value.location
   resource_group_name = each.value.resource_group_name
+  sku                 = each.value.sku
 
   dynamic "ip_configuration" {
     for_each             = each.value.ip_configurations

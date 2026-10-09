@@ -11,6 +11,7 @@ variable "bhs" {
     resource_group_name = string
     location            = string
     ip_forwarding_enabled         = optional(bool)
+    sku                           = optional(string)
     accelerated_networking_enabled = optional(bool)
     tags                          = optional(map(string))
 
