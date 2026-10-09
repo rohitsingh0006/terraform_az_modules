@@ -26,4 +26,13 @@ source_image_reference {
     sku       = each.value.source_image_reference.sku
     version   = each.value.source_image_reference.version
   }
+
+   dynamic "admin_ssh_key" {
+     for_each = each.value.admin_ssh_key
+     content {
+             username  = admin_ssh_key.value.username
+             public_key =    admin_ssh_key.value.public_key
+     }
+   }
+
 }
