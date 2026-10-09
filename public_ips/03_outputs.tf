@@ -5,3 +5,9 @@ output "pip_id" {
         for key, pip in azurerm_public_ip.pip : key => pip.id
     }
 }
+
+output "pip_add" {
+    value = {
+        for key, pip in azurerm_public_ip.pip : key => pip.ip_address
+    }
+}
