@@ -46,12 +46,12 @@ variable "vms" {
       sku       = string
       version   = string
     })
-  }))
 
     admin_ssh_key = optional(list(object({
       username   = string
       public_key = string
     })), [])
 
+  }))
 
 }
